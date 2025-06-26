@@ -6,7 +6,19 @@ public class ConcorsoFotografico{
         int[] voti = new int[numFoto];
 
         Scanner scanner  = new Scanner (System.in);
+        System.out.println("Quanti giudici ci sono");
+        int numGiudici = scanner.nextInt();
 
+        for(int i = 0; i < numGiudici; i++){
+            System.out.println("\nGiudice: " + (i + 1));
+            for(int j = 0; j < numFoto; j++){
+                int voto = (int) (Math.random() * 10);
+                System.out.println("Voto per la foto " + (j + 1) + ": " + voto);
+                voti[j] += voto;
+            } 
+        }
+        
+/* 
         for(int i = 0; i < numFoto; i++){
             System.out.println("Inserisci il voto per la foto n. " + (i + 1) + "(da 1 a 10): ");
             int voto = scanner.nextInt();
@@ -17,5 +29,6 @@ public class ConcorsoFotografico{
             }
             voti[i] = voto;
         }
+            */
     }
 }
