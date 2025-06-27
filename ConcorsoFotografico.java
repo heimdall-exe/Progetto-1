@@ -14,11 +14,11 @@ public class ConcorsoFotografico {
         int fotoPremiate = 0;                                 // Ci serve per vedere quante foto vengono effettivamente premiate
         boolean almenoUnaSufficiente = false;                 // Variabile booleana per vedere se ci sta almeno una foto sufficiente
 
-        // Ciclo for per che ripete in base al numero delle foto
+        // Ciclo for per ripete in base al numero delle foto ( colonne della matrice )
         for (int i = 0; i < numFoto; i++) {
             System.out.println("Inserisci i voti per la foto " + (i + 1) + ":");   
 
-            // Ciclo for per ripetere in base al numero di giudici
+            // Ciclo for per ripetere in base al numero di giudici ( Righe della matrice )
             for (int j = 0; j < numGiudice; j++) {
                 int voto;         // Variabile dove salveremo il voto
 
